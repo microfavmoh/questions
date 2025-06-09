@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    background-color: #f3f3f3;
+    font-family: "Playfair Display";
+}
+header {
+    margin: auto;
+    width: 50px;
+}
+img {
+    width: 100%;
+}
+input {
+    border-radius: 15px;
+    outline: none;
+}
+input:not(input[type = "button"]) {
+    width: 100%;
+    line-height: 40px;
+    background-color: #f3f3f3; 
+}
+.password-feild, .required-feild {
+    border: 2px solid #808080;
+}.required-feild {
+    width: 100%;
+}
+input[type = "button"] {
+    background-color: #000000;
+    color: #ffffff;
+    width: auto;
+    min-width: 25%;
+    line-height: 250%;
+    margin: 20px 0 0 0;
+    border: none;
+}
+.form {
+    width: 50%;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.submit-button {
+    text-align: center;
+}
+.password {
+    margin-right: 10px; 
+    border: none;
+}
+.show-password {
+    width: 25px;
+}
+.password-feild {
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+}
+.error {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .form {
+        width: 100%;
+    }
+}
+@media (min-width: 2560px) {
+    input, .form {
+        font-size: 0.7vw;
+    }
+    header {
+        width: 3%;
+    }
+    div {
+        font-size: 1vw;
+    }
+    input:not(input[type = "button"]) {
+        line-height: 60px;
+    }
+    .show-password {
+        width: 2%;
+    }
+}

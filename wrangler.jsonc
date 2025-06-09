@@ -1,0 +1,14 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "scents",
+    "pages_build_output_dir": "./public",
+	"compatibility_date": "2025-06-07",
+	"d1_databases": [{
+      "binding": "DB",
+      "database_name": "DB",
+      "database_id": "<redacted>"
+  	}],
+	"observability": {
+		"enabled": true
+	}
+}

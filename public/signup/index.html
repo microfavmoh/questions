@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scents</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Gothic&display=swap" rel="stylesheet">
+        <link rel = "icon" href = "../favicon.ico">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "../shared.css">
+    </head>
+    <body>
+        <header>
+            <img src = "../favicon.svg">
+        </header>
+        <main>
+            <div class = "form">
+                Phone number
+                <input type = "text" autofocus placeholder = "(optinal) if email is provided" class = "required-feild" id = "1">
+                Email
+                <input type = "text" placeholder = "(optional) if phone number is provided" class = "required-feild" id = "2">
+                Password
+                <div class = "password-feild">
+                    <input type = "password" placeholder = "password must be 8 characters minimum" class = "password" id = "3">
+                    <img src = "../eye-close.svg" class = "show-password" onclick = "show_password()">
+                </div>
+                Location
+                <input placeholder = "(optional) detailed location including street, the apartment and the floor" class = "required-feild" id = "4">
+                <div class = "submit-button">
+                    <input type = "button" value = "Sign up" onclick = "submit()">
+                </div>
+                <p class = "error">
+                </p>
+            </div>
+        </main>
+        <script src = "../shared.js"></script>
+        <script src = "main.js"></script>
+    </body>
+</html>
